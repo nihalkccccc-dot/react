@@ -34,12 +34,12 @@ const addcomplaint=async()=>{
     description:description,
     image:image
   }
-  await axios.post("http://localhost:3000/complaints", newComplaint)
+  await axios.post("https://react-gzcp.onrender.com/complaints", newComplaint)
 
   getComplaints();
 }
 const getComplaints=async()=>{
-  const response=await axios.get("http://localhost:3000/complaints")
+  const response=await axios.get("https://react-gzcp.onrender.com/complaints")
 setComplaints(response.data)
 }
 
