@@ -48,7 +48,7 @@ const deleteComplaint=(index)=>{
   const updatedComplaints=complaints.filter((item,i)=> i !==index);
   setComplaints(updatedComplaints);
 }catch(error){
-  console.error("Failed to delete Complaint:", error);
+  console.error("Failed to delete complaint:", error);
 }
 };
 
@@ -72,12 +72,12 @@ const deleteComplaint=(index)=>{
 {
     complaints.map((items,index)=>(
         <Card5
-        department={items.department}
-        description={items.description}
-        image={items.image}
-        deleteComplaint={deleteComplaint}
-        index={index}
-        ></Card5> 
+      department={items.department}
+      description={items.description}
+      image={items.image}
+      deleteComplaint={deleteComplaint}
+      index={index}
+       />
         
      ))
      }
