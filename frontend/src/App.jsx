@@ -6,7 +6,7 @@ import './App.css'
 import Navbar1 from './Navbar1';
 import HeroSection from './HeroSection';
 import Card1 from './Card1';
-import Card2 from './Card2';
+
 import Login1 from './Login1';
 import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
