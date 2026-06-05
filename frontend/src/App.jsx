@@ -71,13 +71,13 @@ const deleteComplaint=(index)=>{
     <div className='d-flex flex-wrap justify-content-center gap-3'>
 {
     complaints.map((items,index)=>(
-        <Card5
-      department={items.department}
-      description={items.description}
-      image={items.image}
-      deleteComplaint={deleteComplaint}
-      index={index}
-       />
+       <Card5 key={items._id} 
+       id={items._id} 
+       department={items.department} 
+       description={items.description} 
+       image={items.image} 
+       deleteComplaint={deleteComplaint}
+        />
         
      ))
      }

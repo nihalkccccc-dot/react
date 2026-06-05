@@ -18,10 +18,15 @@ function Card5(props) {
           {props.description}
         </Card.Text>
 
-        <Button variant="danger" onClick={props.deleteComplaint}>
-          
-          Delete
-        </Button>
+        
+<Button
+  variant="danger"
+  onClick={() => props.deleteComplaint(props.id)}
+>
+  Delete
+</Button>
+
+
 
       </Card.Body>
 
