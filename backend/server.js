@@ -8,8 +8,8 @@ app.use(express.json());
 app.use(cors());
 
 
-mongoose.connect("mongodb+srv://mhmdnihal83_db_user:nihal9496@cluster0.qmylhvy.mongodb.net/?appName=Cluster0")
-    .then(() => console.log("☑️ Connected to MongoDB!"))
+mongoose.connect("mongodb+srv://mhmdnihal83_db_user:nihal9496@cluster0.qmylhvy.mongodb.net/studyplanner?retryWrites=true&w=majority")
+    .then(() => console.log("☑️Connected to MongoDB!"))
     .catch(err => console.error("❌ Database connection error:", err));
 
     const complaintSchema = new mongoose.Schema({
@@ -80,4 +80,3 @@ mongoose.connect("mongodb+srv://mhmdnihal83_db_user:nihal9496@cluster0.qmylhvy.m
     app.listen(3000, () => {
         console.log("Server is running on port 3000");
     });
-    

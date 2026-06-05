@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function Navbar5(props) {
+function Navbar1(props) {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -32,4 +32,4 @@ function Navbar5(props) {
   );
 }
 
-export default Navbar5;
+export default Navbar1;

@@ -1,4 +1,4 @@
-function Hero5(props){
+function HeroSection(props){
  return(
     
  <div className='text-center p-5 bg-light'>
@@ -12,9 +12,9 @@ function Hero5(props){
  <input type='text' placeholder='Enter Image URL' className='form-control mb-3' value={props.image} onChange={(e)=>props.setImage(e.target.value)}/>
  
 
- <button className='btn btn-dark mt-3' onClick={props.addcomplaint}>Submit</button>
+ <button className='btn btn-dark mt-3' onClick={props.addComplaint}>Submit</button>
  </div> 
 
     );  
 }
-export default Hero5;
+export default HeroSection;
